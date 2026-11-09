@@ -7,6 +7,14 @@ A dependency-free, non-executing publication review tool for Jupyter notebooks. 
 
 Notebook公開前に、セルごとの点検結果を確認し、残す図と削除する出力を選べます。元ファイルは変更しません。
 
+## Article & live demo / 紹介記事と公開デモ
+
+- [紹介記事：データを分ける・評価する・公開する。Pythonの小さな確認ツールを3つ作りました](https://ryu-koda.com/blog/python-tools-splittrace-eventscore-notebook/) — Japanese overview of SplitTrace, EventScore Explorer, and Notebook Publish Check.
+- [公開デモをブラウザで開く / Open the live demo](https://ryu-koda.com/articles/python-tools/notebook-demo.html) — Synthetic data only; no installation required.
+
+公開デモは合成データの出力例です。自分のファイルをアップロードする画面ではありません。
+The hosted demo is a sample report, not a file-upload service.
+
 ## Try the demo
 
 Download and open [`examples/demo.html`](examples/demo.html). The sample uses synthetic logs and clearly fake credentials. Keep the figure in cell 2, remove outputs in cell 3, and inspect the warning in cell 4: deleting outputs does **not** remove a credential-like value from source code.
