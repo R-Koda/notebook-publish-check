@@ -7,6 +7,28 @@ A dependency-free, non-executing publication review tool for Jupyter notebooks. 
 
 Notebook公開前に、セルごとの点検結果を確認し、残す図と削除する出力を選べます。元ファイルは変更しません。
 
+## Install from PyPI / pipでインストール
+
+Python 3.10 or later. Create and activate a virtual environment first:
+
+```sh
+python3 -m venv .venv
+```
+
+macOS / Linux: `source .venv/bin/activate`
+
+Windows PowerShell: `.venv\Scripts\Activate.ps1`
+
+```sh
+python -m pip install notebook-publish-check
+nbpublish --help
+```
+
+The help screen confirms that the command is available. Install only the tools you need.
+[PyPI package](https://pypi.org/project/notebook-publish-check/) · [Source and examples](https://github.com/R-Koda/notebook-publish-check)
+
+サンプルCSV・Notebookなどはpipでは配置されません。公開デモはブラウザで開けます。自分でサンプルを実行する場合はGitHubの「Code → Download ZIP」で取得・展開し、READMEの相対パスをそのフォルダー内から指定してください。
+
 ## Article & live demo / 紹介記事と公開デモ
 
 - [紹介記事：データを分ける・評価する・公開する。Pythonの小さな確認ツールを3つ作りました](https://ryu-koda.com/blog/python-tools-splittrace-eventscore-notebook/) — Japanese overview of SplitTrace, EventScore Explorer, and Notebook Publish Check.
@@ -17,7 +39,7 @@ The hosted demo is a sample report, not a file-upload service.
 
 ## Try the demo
 
-Download and open [`examples/demo.html`](examples/demo.html). The sample uses synthetic logs and clearly fake credentials. Keep the figure in cell 2, remove outputs in cell 3, and inspect the warning in cell 4: deleting outputs does **not** remove a credential-like value from source code.
+Download and open [`examples/demo.html`](https://github.com/R-Koda/notebook-publish-check/blob/main/examples/demo.html). The sample uses synthetic logs and clearly fake credentials. Keep the figure in cell 2, remove outputs in cell 3, and inspect the warning in cell 4: deleting outputs does **not** remove a credential-like value from source code.
 
 ```sh
 python3 -m venv .venv
@@ -28,7 +50,7 @@ nbpublish examples/publication-demo.ipynb --output reports/review.html --json re
 
 Without installation: `PYTHONPATH=src python3 -m notebook_publish_check` followed by the same arguments.
 
-Python 3.10+. No runtime dependencies. Not yet published to PyPI.
+Python 3.10+. No runtime dependencies.
 
 Exit codes: **0** no selected findings; **1** findings for review (report successfully created); **2** invalid input or I/O error. No findings does not mean a notebook is safe to publish.
 
