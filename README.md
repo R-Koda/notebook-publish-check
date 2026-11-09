@@ -31,6 +31,7 @@ The help screen confirms that the command is available. Install only the tools y
 
 ## Article & live demo / 紹介記事と公開デモ
 
+- [個別ガイド / Notebook Publish Check：公開前に出力を選んで整理する](https://ryu-koda.com/blog/notebook-publish-check-guide/)
 - [紹介記事：データを分ける・評価する・公開する。Pythonの小さな確認ツールを3つ作りました](https://ryu-koda.com/blog/python-tools-splittrace-eventscore-notebook/) — Japanese overview of SplitTrace, EventScore Explorer, and Notebook Publish Check.
 - [公開デモをブラウザで開く / Open the live demo](https://ryu-koda.com/articles/python-tools/notebook-demo.html) — Synthetic data only; no installation required.
 
