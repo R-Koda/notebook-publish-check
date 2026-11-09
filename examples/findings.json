@@ -1,0 +1,51 @@
+[
+  {
+    "cell": null,
+    "area": "metadata",
+    "rule": "absolute-path",
+    "severity": "review",
+    "detail": "Local absolute path in local_path; value omitted."
+  },
+  {
+    "cell": 1,
+    "area": "outputs",
+    "rule": "manual-media-review",
+    "severity": "review",
+    "detail": "Rich output may contain identifying content; images are not OCR-scanned and HTML/JavaScript is never executed in the report."
+  },
+  {
+    "cell": 2,
+    "area": "metadata",
+    "rule": "absolute-path",
+    "severity": "review",
+    "detail": "Local absolute path in local_path; value omitted."
+  },
+  {
+    "cell": 2,
+    "area": "outputs",
+    "rule": "possible-secret",
+    "severity": "high",
+    "detail": "Credential-like pattern in [0].text; value omitted. Review manually."
+  },
+  {
+    "cell": 2,
+    "area": "outputs",
+    "rule": "absolute-path",
+    "severity": "review",
+    "detail": "Local absolute path in [0].text; value omitted."
+  },
+  {
+    "cell": 2,
+    "area": "outputs",
+    "rule": "large-output",
+    "severity": "review",
+    "detail": "136,148 serialized UTF-8 bytes exceeds 100,000."
+  },
+  {
+    "cell": 3,
+    "area": "source",
+    "rule": "possible-secret",
+    "severity": "high",
+    "detail": "Credential-like pattern in source; value omitted. Review manually."
+  }
+]

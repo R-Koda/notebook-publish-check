@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notebook-publish-check"
+version = "0.1.0"
+description = "Review Jupyter notebooks before publication"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Ryu Koda"}]
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+nbpublish = "notebook_publish_check.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/R-Koda/notebook-publish-check"
+Issues = "https://github.com/R-Koda/notebook-publish-check/issues"
